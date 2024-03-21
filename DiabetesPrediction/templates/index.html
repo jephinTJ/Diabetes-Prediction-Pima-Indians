@@ -1,11 +1,55 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index page</title>
+    <style type="text/css">
+      body {
+        div {
+          color: white;
+        }
+        h1 {
+          /* color: "white"; */
+          color: rgb(93, 5, 5);
+          font-family: arial, sans-serif;
+          font-size: 50px;
+          font-weight: bold;
+          margin-top: 200px;
+          text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Add shadow effect */
+        }
+        h2 {
+          color: "white";
+          font-family: arial, sans-serif;
+          font-size: 15px;
+          font-weight: bold;
+          margin-top: 400px;
+        }
+        input[type="submit"] {
+          background-color: #4dc3ff;
+          border: 2px;
+          color: white;
+          padding: 16px 32px;
+          cursor: pointer;
+          margin-top: 15px;
+          border-radius: 10px; /* Adjust radius value for desired curve */
+          box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Add drop shadow */
+        }
+        background-image: url("{% static '/DiabetesPrediction/images/2.jpg'%}");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+    </style>
   </head>
   <body>
-    <p>welcome to the home page</p>
+    <div align="center">
+      <h1>WELCOME TO DIABETES PREDICTION SYSTEM</h1>
+      <form action="predict">
+        <input type="submit" value="lets get started" />
+      </form>
+    </div>
   </body>
 </html>
