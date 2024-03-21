@@ -28,23 +28,33 @@
         padding: 5%;
       }
       h1 {
-        color: #0086b3;
+        color: #050505;
         font-size: 30px;
         font-weight: bold;
       }
       input[type="submit"] {
-        background-color: #4dc3ff;
+        background-color: #000000;
+        border: none;
+        color: rgb(255, 255, 255);
         border: 2px;
-        color: white;
-        padding: 8px 16px;
+        padding: 7px 20px;
         cursor: pointer;
         margin-top: 15px;
+        border-radius: 10px; /* Adjust radius value for desired curve */
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Add drop shadow */
+      }
+      .result-box {
+        border: 2px solid black; /* Or any desired border style */
+        padding: 15px;
+        margin-top: 10px;
+        text-align: center;
+        font-weight: bold;
       }
     </style>
   </head>
   <body>
     <div align="center" class="main">
-      <h1>Please enter the following information</h1>
+      <h1>Please Fill The Following Information</h1>
       <form action="result">
         <table>
           <tr>
@@ -82,7 +92,8 @@
         </table>
         <input type="submit" />
       </form>
-      Result:{{result2}}
+      <div class="result-box">Result: {{ result2 }}</div>
+      </div>
     </div>
   </body>
 </html>
